@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frying Dutchman</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<%= render 'layouts/header'%>
+<body>
+
+
+
+<%= yield %>
+
+</body>
+
+<%= render 'layouts/footer'%>
+
+</html>
