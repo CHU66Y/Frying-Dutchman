@@ -5,6 +5,8 @@ body
 {
 	font-family: Cooper Black;
 	text-align:center;
+	background-color: Black;
+	color: #FFFFFF;
 }
 
 
@@ -12,12 +14,14 @@ body
 #header
 {
 	font-family: Algerian;
-	color: #F56525;
+	color: #000000;
  	font-size:40px ;
+ 	background-color: #FFFFFF;
 }
 
 #header img
 {
+    padding-top:25px;
 	height:150px;
 	width:150px;	
 }
@@ -25,12 +29,9 @@ body
 /*footer*/
 #footer
 {
-	background: ;
 	width:100%;
 	height:auto; 
-	margin-top:10px;
-	color:	; 
-
+	margin-top:10px; 
 }
 
 
