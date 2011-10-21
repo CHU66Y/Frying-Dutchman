@@ -14,12 +14,20 @@ Product.find_or_create_by_name(:name => "Calamari", :description => "Calamari Sa
 Product.find_or_create_by_name(:name => "Crab", :description => "Crab Linguini Alfredo", :price => "17.25")
 Product.find_or_create_by_name(:name => "Clam", :description => "Clam Chowder", :price => "6.50")
 
-Productfeature.find_or_create_by_name(:name => "Cold", :description => "Ice Cold")
-Productfeature.find_or_create_by_name(:name => "Sizzling", :description => "Right off the pan")
-Productfeature.find_or_create_by_name(:name => "Fresh", :description => "Caught this morning")
-Productfeature.find_or_create_by_name(:name => "Big", :description => "Biggest in the country")
-Productfeature.find_or_create_by_name(:name => "Tasty", :description => "Keep you wanting more")
-Productfeature.find_or_create_by_name(:name => "Delicious", :description => "Mouth Watering")
-Productfeature.find_or_create_by_name(:name => "Inexpensive", :description => "Best price")
-Productfeature.find_or_create_by_name(:name => "Yummy", :description => "Make your belly yell for more")
-Productfeature.find_or_create_by_name(:name => "Filling", :description => "Won't leave hungry")
+ProductFeature.find_or_create_by_name(:name => "Cold", :description => "Ice Cold")
+ProductFeature.find_or_create_by_name(:name => "Sizzling", :description => "Right off the pan")
+ProductFeature.find_or_create_by_name(:name => "Fresh", :description => "Caught this morning")
+ProductFeature.find_or_create_by_name(:name => "Big", :description => "Biggest in the country")
+ProductFeature.find_or_create_by_name(:name => "Tasty", :description => "Keep you wanting more")
+ProductFeature.find_or_create_by_name(:name => "Delicious", :description => "Mouth Watering")
+ProductFeature.find_or_create_by_name(:name => "Inexpensive", :description => "Best price")
+ProductFeature.find_or_create_by_name(:name => "Yummy", :description => "Make your belly yell for more")
+ProductFeature.find_or_create_by_name(:name => "Filling", :description => "Won't leave hungry")
+
+Customer.find_or_create_by_last_name(:last_name => "Simpson", :first_name => "Homer", :address => "742 Evergreen Terrace", :phone => "KL5-5555")
+Customer.find_or_create_by_last_name(:last_name => "Isoda", :first_name => "Akira", :address => "The Happy Sumo", :phone => "KL5-1234")
+Customer.find_or_create_by_last_name(:last_name => "Hodgson", :first_name => "Chris", :address => "Wasaga Beach", :phone => "352-5555")
+Customer.find_or_create_by_last_name(:last_name => "Gumble", :first_name => "Barney", :address => "Bowl-A-Rama", :phone => "KL5-9876")
+
+
+
