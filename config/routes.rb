@@ -1,6 +1,17 @@
 Fryingdutchman::Application.routes.draw do
+  
+ namespace :admin do
+  resources :customers
+  resources :products
+  resources :orders
+ end
+
+  
   get "restaurant/home"
   root :to => 'restaurant#home'
+  
+
+                  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
