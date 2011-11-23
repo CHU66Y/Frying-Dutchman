@@ -7,13 +7,15 @@ Fryingdutchman::Application.routes.draw do
   resources :products
   resources :orders
  end
-
+  
   
   get "restaurant/home"
   root :to => 'restaurant#home'
   
-  match 'administrator' => 'adminhome#adminhome'
+  match 'administrator' => 'admin/products#index'
   match 'store' => 'store#store'
+  
+  
                   
 
   # The priority is based upon order of creation:
