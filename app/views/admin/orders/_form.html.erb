@@ -1,0 +1,20 @@
+<p>
+<%= form_for [:admin, @order] do |f|  %>
+	
+<div class="field">
+		<%= f.label :customer_id %><br />
+		<%=  f.text_field :customer_id %><p>
+</div>
+<div class="field">
+		<%= f.label :product_id %><br />
+		<%=  f.text_field :product_id %><p>
+</div>
+<div class="field">
+		<%= f.label :price %><br />
+		<%=  f.text_field :price %><p>
+</div>
+<p>
+<div class="action">
+	<%= f.submit %>
+</div>
+<% end  %>
