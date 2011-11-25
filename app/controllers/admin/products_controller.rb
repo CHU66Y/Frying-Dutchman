@@ -1,12 +1,13 @@
 class Admin::ProductsController < ApplicationController
 
   def index
-    @product = Product.all
-    
+    @product = Product.all  
   end
   
   def create
-    @product = Product.new
+    @product = Product.new(params[:product])
+    @product.save
+    redirect_to admin_products_path
   end
   
   def new
@@ -17,17 +18,15 @@ class Admin::ProductsController < ApplicationController
     @product = Product.find(params[:id])
   end
   
-  def show
-    @product = Product.find
-  end
-  
   def update
-    @product = Product.update
+    @product = Product.find(params[:id])
+    @product.update_attributes (params[:product])
+    redirect_to admin_products_path
   end
   
   def destroy
-    @product = Product.find
+    @product = Product.find(params[:id])
     @product.destroy
+    redirect_to admin_products_path
   end
-
 end

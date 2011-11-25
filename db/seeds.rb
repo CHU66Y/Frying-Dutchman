@@ -13,6 +13,10 @@ Product.find_or_create_by_name(:name => "Gumbo", :description => "Shrimp, Scallo
 Product.find_or_create_by_name(:name => "Calamari", :description => "Calamari Salad", :price => "6.00")
 Product.find_or_create_by_name(:name => "Crab", :description => "Crab Linguini Alfredo", :price => "17.25")
 Product.find_or_create_by_name(:name => "Clam", :description => "Clam Chowder", :price => "6.50")
+Customer.find_or_create_by_last_name(:last_name => "Vorhees", :first_name => "Jason", :address => "Camp Crystal Lake", :phone => "666-6666")
+Customer.find_or_create_by_last_name(:last_name => "Simpson", :first_name => "Homer", :address => "Springfield", :phone => "555-5555")
+Customer.find_or_create_by_last_name(:last_name => "Smurf", :first_name => "Papa", :address => "Enchanted Forest", :phone => "123-4567")
+Customer.find_or_create_by_last_name(:last_name => "Man", :first_name => "Super", :address => "Krypton", :phone => "976-9999")
 
 ProductFeature.find_or_create_by_name(:name => "Cold", :description => "Ice Cold")
 ProductFeature.find_or_create_by_name(:name => "Sizzling", :description => "Right off the pan")
@@ -24,10 +28,6 @@ ProductFeature.find_or_create_by_name(:name => "Inexpensive", :description => "B
 ProductFeature.find_or_create_by_name(:name => "Yummy", :description => "Make your belly yell for more")
 ProductFeature.find_or_create_by_name(:name => "Filling", :description => "Won't leave hungry")
 
-Customer.find_or_create_by_last_name(:last_name => "Simpson", :first_name => "Homer", :address => "742 Evergreen Terrace", :phone => "KL5-5555")
-Customer.find_or_create_by_last_name(:last_name => "Isoda", :first_name => "Akira", :address => "The Happy Sumo", :phone => "KL5-1234")
-Customer.find_or_create_by_last_name(:last_name => "Hodgson", :first_name => "Chris", :address => "Wasaga Beach", :phone => "352-5555")
-Customer.find_or_create_by_last_name(:last_name => "Gumble", :first_name => "Barney", :address => "Bowl-A-Rama", :phone => "KL5-9876")
 
 
 

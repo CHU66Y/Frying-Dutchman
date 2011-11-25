@@ -1,6 +1,6 @@
 Fryingdutchman::Application.routes.draw do
   
-  devise_for :users
+  devise_for :users, :path_names => { :sign_in => "login"}
 
  namespace :admin do
   resources :customers
@@ -8,12 +8,12 @@ Fryingdutchman::Application.routes.draw do
   resources :orders
  end
   
+ get "restaurant/home"
+ root :to => 'restaurant#home'  
+
   
-  get "restaurant/home"
-  root :to => 'restaurant#home'
-  
-  match 'administrator' => 'admin/products#index'
   match 'store' => 'store#store'
+  match 'adminhome' => 'adminhome#adminhome'
   
   
                   

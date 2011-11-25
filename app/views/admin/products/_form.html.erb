@@ -1,0 +1,22 @@
+<p>
+<%= form_for [:admin, @product] do |f|  %>
+	
+<div class="field">
+		<%= f.label :Name %><br />
+		<%=  f.text_field :name %><p>
+</div>
+<div class="field">
+		<%= f.label :Description %><br />
+		<%=  f.text_field :description %><p>
+</div>
+<div class="field">
+		<%= f.label :Price %><br />
+		<%=  f.text_field :price %><p>
+</div>
+	
+<div class="actions">
+	<%= f.submit "Create" %>
+</div>
+
+<% end  %>
+<p>
