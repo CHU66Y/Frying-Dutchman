@@ -13,8 +13,10 @@
 	<td><%= product.name %></td>
 	<td><%= product.description %></td>
 	<td><%= product.price %></td>
-	<td><%= button_to "Add to Cart" %>
- </tr>
+	<!--<td><%= button_to 'Add to Cart', line_items_path(:product_id => product) %></td>
+-->
+
+</tr>
 <% end %>
 </table>
 </center>
