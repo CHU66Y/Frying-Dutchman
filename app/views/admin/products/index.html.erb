@@ -2,25 +2,29 @@
 <center>
 <table border =1>
 
- <tr>
-	<th><b>Product</b></th>
-	<th><b>Description</b></th>
-	<th><b>Price</b></th>
- </tr>
-<% @product.each do |product| %>
- <tr>
-	<td><%= product.name %></td>
-	<td><%= product.description %></td>
-	<td><%= product.price %></td>
-	<td><%= link_to 'Edit', edit_admin_product_path(product)%></td>
-    <td><%= link_to 'Destroy',{:action =>"destroy", :controller=> "admin/products", :id => product}, confirm: "Are you sure?", method: :delete %></td>
- </tr>
-<% end %>
+	 <tr>
+		<th><b>ID</b></th>		
+		<th><b>Product</b></th>
+		<th><b>Description</b></th>
+		<th><b>Price</b></th>
+	 </tr>
+	<% @product.each do |product| %>
+	 <tr>
+		<td><%= product.id %></td>		
+		<td><%= product.name %></td>
+		<td><%= product.description %></td>
+		<td><%= product.price %></td>
+		<td><%= link_to 'Edit', edit_admin_product_path(product)%></td>
+		<td><%= link_to 'Destroy',{:action =>"destroy", :controller=> "admin/products", :id => product}, confirm: "Are you sure?", method: :delete %></td>
+	 </tr>
+	<% end %>
 
 </table>
 </center>
 <p>
 <%= link_to 'New', new_admin_product_path%>
+<br>
+<%= link_to 'Back', :back %>
 
 
 

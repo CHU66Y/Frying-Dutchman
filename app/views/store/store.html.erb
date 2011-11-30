@@ -3,13 +3,15 @@
 <center>
 <table border =1>
 
- <tr>
+ <tr>	
+	<th><b>ID</b></th>		
 	<th><b>Product</b></th>
 	<th><b>Description</b></th>
 	<th><b>Price</b></th>
  </tr>
 <% @products.each do |product| %>
  <tr>
+	<td><%= product.id %></td>
 	<td><%= product.name %></td>
 	<td><%= product.description %></td>
 	<td><%= product.price %></td>
