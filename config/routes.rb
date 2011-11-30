@@ -1,5 +1,9 @@
 Fryingdutchman::Application.routes.draw do
   
+  resources :line_items
+
+  resources :carts
+
   devise_for :users, :path_names => { :sign_in => "login"}
 
  namespace :admin do
