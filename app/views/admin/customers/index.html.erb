@@ -3,6 +3,7 @@
 <table border =1>
 
  <tr>
+	<th><b>ID</b></th>
 	<th><b>First Name</b></th>
 	<th><b>Last Name</b></th>
 	<th><b>Address</b></th>
@@ -12,6 +13,7 @@
 <% @customer.each do |customer| %>
 
 <tr>
+<td><%= customer.id %>
 <td><%= customer.last_name %></td>
 <td><%= customer.first_name %></td>
 <td><%= customer.address%></td>
@@ -26,6 +28,7 @@
 </center>
 <p>
 <%= link_to 'New', new_admin_customer_path%>
-
+<br>
+<%= link_to 'Back', :back %>
 
 
